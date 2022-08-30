@@ -1,0 +1,87 @@
+html,
+body {
+    font-size: $fontSizeDef;
+    line-height: 140%;
+    padding: 0;
+    margin: 0;
+    font-family: $font;
+}
+
+html {
+    scroll-padding-top: 200px;
+
+    @media(max-width: $tablet) {
+        scroll-padding-top: 80px; 
+    }
+}
+
+body {
+    min-height: 100vh;
+    color: $active;
+
+    &.no-scroll {
+        overflow-y: hidden;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a, button, input, textarea {
+    font-family: $font;
+}
+
+.container {
+    width: $dl;
+    padding: 0 10px;
+    margin: 0 auto;
+    font-size: $fontSizeDef;
+    position: relative;
+
+    &.animation {
+
+    }
+
+    @media (max-width: $dl) {
+        width: $dm;
+    }
+
+    @media (max-width: $dm) {
+        width: $ds;
+    }
+
+    @media (max-width: $ds) {
+        width: $tablet;
+    }
+
+    @media (max-width: $tablet) {
+        width: $mobile;
+    }
+
+    @media (max-width: $mobile) {
+        width: 100%;
+        padding: 0 14px;
+    }
+}
+
+ul {
+    padding-left: 20px;
+
+    @media(max-width: $tablet) {
+        text-align: left;
+    }
+
+    li {
+        margin-bottom: 12px;
+        list-style: disc;
+
+        @media(max-width: $tablet) {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+p {
+    margin-bottom: $fontSizeDef;
+}
