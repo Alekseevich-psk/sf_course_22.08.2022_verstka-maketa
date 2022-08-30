@@ -1,0 +1,30 @@
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 20px 42px;
+    color: $white;
+    font-style: italic;
+    line-height: 1;
+    background-color: $active;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    transition: $transition;
+
+    &:hover {
+        background-color: $activeHover;
+    }
+
+    &:active {
+        background-color: $activeActive;
+    }
+
+    &--outline {
+        background-color: transparent;
+        border: 1px solid $white;
+
+        &:hover {
+            border: 1px solid $active;
+        }
+    }
+
+}

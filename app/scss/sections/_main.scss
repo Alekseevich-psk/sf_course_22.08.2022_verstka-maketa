@@ -1,0 +1,70 @@
+.main {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/bg-main.jpg");
+    min-height: 100vh;
+    color: $white;
+    display: flex;
+    align-items: center;
+
+    @media (max-height: 720px), (max-width: $dm) {
+        display: block;
+        padding: 200px 0 200px;
+        min-height: auto;
+    }
+
+    @media (max-width: $mobile) {
+        padding-bottom: 120px;
+    }
+
+    &__wrap {
+        max-width: 600px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 40px;
+        line-height: 120%;
+        font-family: $fontTitle;
+        margin-bottom: 20px;
+
+        span {
+            color: $active;
+        }
+
+        @media (max-width: $mobile) {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__desc {
+        font-size: 22px;
+        line-height: 140%;
+
+        @media (max-width: $mobile) {
+            font-size: 14px;
+            line-height: 135%;
+        }
+    }
+
+    &__align {
+        padding-top: 28px;
+    }
+
+    &__btn {
+        &:first-child {
+            margin-right: 20px;
+
+            @media (max-width: $mobile) {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: $mobile) {
+            width: 100%;
+            font-size: 12px;
+        }
+    }
+}
