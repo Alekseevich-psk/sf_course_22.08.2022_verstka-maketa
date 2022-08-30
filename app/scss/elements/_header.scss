@@ -1,0 +1,36 @@
+.header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    background-color: #131313;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 22px 0;
+        align-items: center;
+    }
+
+    &__item {
+
+        &--logo {
+            font-size: 11px;
+            line-height: 1;
+            text-transform: uppercase;
+        }
+
+    }
+
+    &__link {
+        color: $active;
+        line-height: 1;
+        text-decoration: underline;
+    }
+
+    &__btn {
+        text-transform: uppercase;
+        margin-left: 60px;
+        padding: 12px 32px;
+    }
+}
