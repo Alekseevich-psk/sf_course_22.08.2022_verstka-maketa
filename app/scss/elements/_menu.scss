@@ -1,5 +1,9 @@
 .menu {
 
+    @media(max-width: $dm) {
+        display: none;
+    }
+
     &__item {
         display: inline-block;
         line-height: 1;
