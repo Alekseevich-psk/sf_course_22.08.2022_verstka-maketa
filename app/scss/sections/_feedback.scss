@@ -1,0 +1,75 @@
+.feedback {
+    padding: 92px 0;
+
+    @media(max-width: $tablet) {
+        background: linear-gradient(0deg, $white 27%, $black 27%);
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 770px;
+        margin: 0 auto;
+        justify-content:space-between;
+
+        @media(max-width: $tablet) {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    &__checkbox-wrap {
+        max-width: 540px;
+        margin: 20px auto 0;
+        text-align: center;
+
+        @media(max-width: $tablet) {
+            margin-top: 12px;
+            margin-bottom: 32px;
+        }
+
+        label {
+            @media(max-width: $tablet) {
+                color: $white;
+            }
+        }
+    }
+
+    &__item {
+        max-width: 200px;
+
+        @media(max-width: $tablet) {
+            max-width: 100%;
+            margin-bottom: 12px;
+
+            &--submit {
+                order: 2;
+            }
+        }
+
+    }
+
+    &__input {
+        width: 230px;
+
+        @media(max-width: $tablet) {
+            width: 100%;
+            border-bottom: 1px solid $white;
+        }
+    }
+
+    &__label {
+        @media(max-width: $tablet) {
+            color: $white;
+        }
+    }
+
+    &__btn {
+        width: 200px;
+
+        @media(max-width: $tablet) {
+            width: 100%;
+        }
+    }
+
+}
