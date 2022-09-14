@@ -1,0 +1,102 @@
+.online-control {
+    background: linear-gradient(0deg, $white 57%, $black 57%);
+
+    @media (max-width: $tablet) {
+        background: linear-gradient(0deg, $black 57%, $black 57%);
+    }
+
+    &__s-title {
+        position: relative;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        margin-bottom: 92px;
+
+        @media (max-width: $tablet) {
+            font-size: 22px;
+        }
+
+        &:after {
+            position: absolute;
+            content: "";
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 114px;
+            height: 32px;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='114' height='29' fill='none' viewBox='0 0 114 29'%3e%3crect width='32' height='1.543' y='13.812' fill='%23E3B873' rx='.772'/%3e%3crect width='32' height='1.543' x='82.001' y='13.812' fill='%23E3B873' rx='.772'/%3e%3cpath fill='%23E3B873' d='M73.851 9.766 49.731.829a.595.595 0 0 0-.766.353l-2.67 7.269a.596.596 0 0 0 .353.764l2.797 1.027-.616 1.678a.596.596 0 0 0 .353.765l5.593 2.053-.41 1.119a2.354 2.354 0 0 0 .848 2.746v3.04h-8.016a2.987 2.987 0 0 0-2.13-1.727v-1.251a.596.596 0 0 0-.596-.596H42.07a.596.596 0 0 0-.595.596v9.532c0 .329.266.595.595.595h2.402c.33 0 .596-.266.596-.596v-1.25a2.987 2.987 0 0 0 2.13-1.728h8.016v.596a1.787 1.787 0 1 0 3.575 0v-6.6a2.36 2.36 0 0 0 1.168-1.302l.411-1.119L65.4 18.64a.593.593 0 0 0 .765-.354l.223-.608a3.571 3.571 0 0 0 3.92-4.97l3.611-1.855a.596.596 0 0 0-.065-1.09l-.003.003Zm-17.446 9.38.493.179c.224.08.46.127.698.137v2.181h-1.191v-2.497Zm-12.53 8.455h-1.21v-8.34h1.21v8.34Zm2.384-3.575a1.791 1.791 0 0 1-1.192 1.686V21.15a1.79 1.79 0 0 1 1.192 1.685v1.191Zm1.21-1.191h10.127v1.191H47.47v-1.191ZM57 26.409a.596.596 0 0 1-.596-.595v-.596h1.191v.596a.596.596 0 0 1-.595.595Zm2.248-10.026-.411 1.119a1.192 1.192 0 0 1-1.529.707l-1.12-.41a1.192 1.192 0 0 1-.708-1.53l.41-1.118 3.02 1.109.338.123Zm6.003.935-15.1-5.544.412-1.12 8.947 3.287a.6.6 0 0 0 .614-.126l1.672-1.574 4.687 1.722-1.232 3.355Zm4.028-2.328a2.392 2.392 0 0 1-2.473 1.55l.92-2.508 1.504-.775c.235.55.253 1.17.05 1.733Zm-2.01-2.06a.534.534 0 0 0-.094.017l-5.312-1.95a.596.596 0 0 0-.614.124l-1.673 1.574-11.958-4.39 2.258-6.15 22.29 8.258-4.898 2.517Z'/%3e%3cpath stroke='%23E3B873' stroke-linecap='round' d='m53.13 8.703-.526 1.42m2.815-.58-.525 1.42m2.747-.593-.526 1.42'/%3e%3c/svg%3e ");
+        }
+    }
+
+    &__video {
+        margin: 0 auto 80px;
+        position: relative;
+        max-width: 820px;
+        height: 440px;
+        filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.2));
+
+        @media (max-width: $tablet) {
+            filter: none;
+            height: 320px;
+            margin-bottom: 48px;
+        }
+
+        @media(max-width: $mobile) {
+            height: 220px;
+        }
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/bg-video-def.jpg");
+    }
+
+    &__btn-play {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 86px;
+        height: 86px;
+        transform: translate(-50%, -50%);
+        background-size: 100% 100%;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='145' height='145' fill='none' viewBox='0 0 145 145'%3e%3cg filter='url(%23a)'%3e%3ccircle cx='72.5' cy='67.5' r='42.5' fill='%23E3B873'/%3e%3c/g%3e%3cpath fill='%23fff' d='M86 68 65 80.124V55.876L86 68Z'/%3e%3cdefs%3e%3cfilter id='a' width='145' height='145' x='0' y='0' color-interpolation-filters='sRGB' filterUnits='userSpaceOnUse'%3e%3cfeFlood flood-opacity='0' result='BackgroundImageFix'/%3e%3cfeColorMatrix in='SourceAlpha' result='hardAlpha' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0'/%3e%3cfeOffset dy='5'/%3e%3cfeGaussianBlur stdDeviation='15'/%3e%3cfeColorMatrix values='0 0 0 0 0.890196 0 0 0 0 0.721569 0 0 0 0 0.45098 0 0 0 0.2 0'/%3e%3cfeBlend in2='BackgroundImageFix' result='effect1_dropShadow_1_11184'/%3e%3cfeBlend in='SourceGraphic' in2='effect1_dropShadow_1_11184' result='shape'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e ");
+    }
+
+    &__desc {
+        position: relative;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 200%;
+        color: $black;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 680px;
+
+        @media (max-width: $tablet) {
+            font-size: 12px;
+            line-height: 170%;
+            color: $white;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: -30px;
+            width: 56px;
+            height: 2px;
+            background-color: $active;
+            transform: translateX(-50%);
+
+            @media (max-width: $tablet) {
+                top: -20px;
+            }
+        }
+    }
+}

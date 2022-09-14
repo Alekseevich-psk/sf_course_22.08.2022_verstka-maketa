@@ -18,3 +18,7 @@ $tablet : 960px;
 $ds : 1024px;
 $dm : 1200px;
 $dl : 1260px;
+
+@media(max-width: $tablet) {
+    $black : #181818;
+}
