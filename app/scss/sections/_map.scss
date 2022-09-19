@@ -1,0 +1,106 @@
+.map {
+    padding-top: 180px;
+    padding-bottom: 62px;
+    background-size: cover;
+    background-image: url("../images/bg-map.jpg");
+
+    @media (max-width: $tablet) {
+        padding-top: 32px;
+        background-image: none;
+        background-color: $black;
+    }
+
+    &__container {
+        @media (max-width: $tablet) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__s-title {
+        color: $active;
+        text-align: center;
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 28px;
+    }
+
+    &__soc-wrap {
+        display: flex;
+        margin: 0 auto;
+        width: 92px;
+        justify-content: space-between;
+        margin-bottom: 38px;
+
+        @media (max-width: $tablet) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__ico {
+        position: relative;
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        background-color: $active;
+        border-radius: 50%;
+        transition: $transition;
+
+        &:hover {
+            background-color: $white;
+
+            &:before {
+                width: 60%;
+                height: 60%;
+                background-color: $active;
+            }
+        }
+
+        &:before {
+            transition: $transition;
+            display: block;
+            content: "";
+            width: 50%;
+            height: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            mask-size: 100% 100%;
+            background-color: $white;
+        }
+        
+        &--mail {
+            &:before {
+                mask-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='14' fill='none' viewBox='0 0 16 14'%3e%3cpath stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M2.4 1.122h11.2c.77 0 1.4.63 1.4 1.4v8.4c0 .77-.63 1.4-1.4 1.4H2.4c-.77 0-1.4-.63-1.4-1.4v-8.4c0-.77.63-1.4 1.4-1.4Z'/%3e%3cpath stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m15 2.522-7 4.9-7-4.9'/%3e%3c/svg%3e ");
+            }
+        }
+
+        &--insta {
+            &:before {
+                mask-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='14' height='15' fill='none' viewBox='0 0 14 15'%3e%3cpath stroke='%23fff' stroke-width='1.5' d='M10 1.721H4a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3v-6a3 3 0 0 0-3-3Z'/%3e%3cpath stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M9.4 7.343a2.4 2.4 0 1 1-4.748.704A2.4 2.4 0 0 1 9.4 7.343Z'/%3e%3c/svg%3e ");
+            }
+        }
+        
+
+    }
+
+    &__frame {
+        height: 460px;
+        max-width: 920px;
+        margin: 0 auto;
+        filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.15));
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: $tablet) {
+            order: -1;
+            height: 320px;
+            margin-bottom: 32px;
+        }
+    }
+}
