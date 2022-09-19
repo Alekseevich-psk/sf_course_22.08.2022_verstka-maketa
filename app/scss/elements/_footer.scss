@@ -1,9 +1,9 @@
-.header {
-    position: fixed;
-    z-index: 100;
-    width: 100%;
-    top: 0;
+.footer {
     background-color: $black;
+
+    @media(max-width: $mobile) {
+        display: none;
+    }
 
     &__container {
         display: flex;
