@@ -1,5 +1,5 @@
 // system params
-let project_flr = "dist";
+let project_flr = "./";
 let source_flr = "app";
 let baseDir = "./" + project_flr + "/";
 let fs = require('fs');
