@@ -829,6 +829,11 @@ p {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
+  display: none;
+}
+
+.projects__about-project.active {
+  display: flex;
 }
 
 .projects__item {
@@ -936,6 +941,11 @@ p {
      object-fit: cover;
   width: 100%;
   height: 100%;
+  display: none;
+}
+
+.projects__picture.active {
+  display: block;
 }
 
 .projects__nav {
