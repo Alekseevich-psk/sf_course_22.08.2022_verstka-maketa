@@ -959,6 +959,7 @@ p {
 }
 
 .projects__btn-title {
+  position: relative;
   cursor: pointer;
   font-family: "Yeseva One", sans-serif;
   background-color: transparent;
@@ -983,7 +984,16 @@ p {
 
 .projects__btn-title.active {
   color: #E3B873;
-  border-bottom: 2px solid #E3B873;
+}
+
+.projects__btn-title.active:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #E3B873;
 }
 
 .online-control {
